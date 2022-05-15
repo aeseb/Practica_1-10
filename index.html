@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body style="background-color: rgb(198, 226, 198);">
+    <!--
+        menu de comida
+        cada orden con  un boton
+        cuando el cliente seleccione una orden esta se muestra
+        en la pagina
+    -->
+    <div style="margin-top: 5%; display: grid; place-items: center;">
+        <h3>Menu de comida</h3>
+
+        <!--'this.id' Envia al comportamiento 'enviarOrden' el id del boton.-->
+        <div>                   
+            <button id="1" onclick="enviarOrden(this.id)" style="margin-right: 10px">1</button>
+            <h4 style="float: right; margin-top: 0px;">Pizza</h4>
+        </div>
+
+        <div>
+            <button id="2" onclick="enviarOrden(this.id)" style="margin-right: 10px">2</button>
+            <h4 style="float: right; margin-top: 0px;">Mila</h4>
+        </div>
+
+        <div>
+            <button id="3" onclick="enviarOrden(this.id)" style="margin-right: 10px">3</button>
+            <h4 style="float: right; margin-top: 0px;">Cafe</h4>
+        </div>
+        <div id="ordenRealizada"></div>
+    </div>
+
+    <script src="menu.js"></script>
+
+</body>
+
+</html>
